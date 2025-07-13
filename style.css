@@ -1,0 +1,111 @@
+/* General styles */
+body {
+    background: gray;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Calculator container */
+.calculator {
+    background: #1e1e20;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    padding: 30px 25px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Display */
+.calculator .display {
+    background: #cedcf2;
+    color: #00adb5;
+    font-size: 3rem;
+    padding: 18px 10px;
+    border-radius: 12px;
+    text-align: left;
+    height: 700px;
+    box-shadow: inset 0 2px 6px rgba(238, 237, 237, 0.1);
+    overflow-x: auto;
+    direction: rtl;
+}
+
+.calculator h1 {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+/* Buttons grid */
+.calculator .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-gap: 15px;
+}
+
+/* Button styles */
+.calculator button {
+    background:white;
+    color: black;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 12px;
+    padding: 18px 0;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+    font-weight: 600;
+}
+
+.calculator button:active {
+    background: #008891;
+    transform: scale(0.97);
+}
+
+/* Special buttons */
+.calculator button.operator {
+    background: #f96d00;
+}
+
+.calculator button.operator:active {
+    background: #c75100;
+}
+
+.calculator button.equal {
+    background: #393e46;
+    color: #00adb5;
+    font-size: 1.5rem;
+}
+
+.calculator button.equal:active {
+    background: #232526;
+}
+
+.calculator button.clear {
+    background: #ff2e63;
+}
+
+.calculator button.clear:active {
+    background: #b22234;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    .calculator {
+        width: 98vw;
+        padding: 15px 5px;
+    }
+    .calculator .buttons {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 8px;
+    }
+    .calculator .display {
+        font-size: 1.3rem;
+        padding: 10px 6px;
+    }
+}
