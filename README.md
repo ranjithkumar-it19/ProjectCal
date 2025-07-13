@@ -1,14 +1,12 @@
-Calculator
-A simple, responsive calculator built using HTML, CSS, and JavaScript. This project demonstrates the design, construction, and optimization of a standard calculator for basic arithmetic operations.
-
-Features
-Perform basic operations: addition, subtraction, multiplication, and division
-Responsive design for mobile and desktop devices
-Clean and intuitive user interface
-Keyboard support (optional, if implemented)
-
+# Calculator Project
 ProjectCal/
 ├── index.html
 ├── style.css
 ├── script.js
 └── README.md
+## Project Structure
+
+- `index.html`: The main HTML file that structures the calculator’s layout.
+- `style.css`: This file contains all the styles that make the calculator look good.
+- `script.js`: Holds the JavaScript code, which adds calculator functionality (handling button clicks, calculations, etc.).
+- 
